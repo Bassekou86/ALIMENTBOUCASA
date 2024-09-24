@@ -4,10 +4,18 @@
         <img src="../assets/images/logo.jpg" alt="Logo">
       </div>
       <ul class="nav-links">
-        <li><a href="/">Accueil</a></li>
-        <li><a href="../pages/Apropos.vue">A propos</a></li>
-        <li><a href="../pages/Contact.vue">Contact</a></li>
-        <li><a href="../pages/Blog.vue">Blog</a></li>
+        <li>
+          <RouterLink to="/">Accueil</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/Apropos">A propos</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/Contact">Contact</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/Blog">Nos produits</RouterLink>
+        </li>
       </ul>
     </nav>
   </template>
@@ -19,13 +27,18 @@
   </script>
   
   <style scoped>
-  .navbar {
-    background-color: #333;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.navbar {
+  background-color: #f9f9f9; /* new background color */
+  padding: 1rem;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
   
   .logo {
     margin-right: 20px;
@@ -45,10 +58,11 @@
   
   .nav-links li {
     margin-right: 20px;
+    margin-left: auto;
   }
   
   .nav-links a {
-    color: #fff;
+    color: #100f0f;
     text-decoration: none;
   }
   </style>

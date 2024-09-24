@@ -1,10 +1,10 @@
 {
-  "kind": "singleType",
-  "collectionName": "casa_blogs",
+  "kind": "collectionType",
+  "collectionName": "casaproduits",
   "info": {
-    "singularName": "casa-blog",
-    "pluralName": "casa-blogs",
-    "displayName": "casaBlog"
+    "singularName": "casaproduit",
+    "pluralName": "casaproduits",
+    "displayName": "casaproduit"
   },
   "options": {
     "draftAndPublish": true
@@ -17,11 +17,7 @@
     },
     "Description": {
       "type": "text",
-      "required": true
-    },
-    "Date": {
-      "private": true,
-      "type": "date"
+      "required": false
     },
     "Couverture": {
       "allowedTypes": [
@@ -31,8 +27,10 @@
         "audios"
       ],
       "type": "media",
-      "multiple": true,
-      "required": true
+      "multiple": true
+    },
+    "Date": {
+      "type": "date"
     }
   }
 }

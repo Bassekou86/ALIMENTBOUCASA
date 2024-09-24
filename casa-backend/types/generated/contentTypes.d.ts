@@ -362,36 +362,32 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiCasaBlogCasaBlog extends Schema.SingleType {
-  collectionName: 'casa_blogs';
+export interface ApiCasaproduitCasaproduit extends Schema.CollectionType {
+  collectionName: 'casaproduits';
   info: {
-    singularName: 'casa-blog';
-    pluralName: 'casa-blogs';
-    displayName: 'casaBlog';
+    singularName: 'casaproduit';
+    pluralName: 'casaproduits';
+    displayName: 'casaproduit';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     Titre: Attribute.String & Attribute.Required;
-    Description: Attribute.Text & Attribute.Required;
-    Date: Attribute.Date & Attribute.Private;
-    Couverture: Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
-    > &
-      Attribute.Required;
+    Description: Attribute.Text;
+    Couverture: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    Date: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::casa-blog.casa-blog',
+      'api::casaproduit.casaproduit',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'api::casa-blog.casa-blog',
+      'api::casaproduit.casaproduit',
       'oneToOne',
       'admin::user'
     > &
@@ -835,7 +831,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::casa-blog.casa-blog': ApiCasaBlogCasaBlog;
+      'api::casaproduit.casaproduit': ApiCasaproduitCasaproduit;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;

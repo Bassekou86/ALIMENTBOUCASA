@@ -4,12 +4,9 @@
   </template>
   
   <script>
-  export default {
-    // your script content here
-    mounted() {
-      console.log('Apropos component mounted!');
-    }
-  }
+    export default {
+  name: 'Apropos'
+}
   </script>
   
   <style>

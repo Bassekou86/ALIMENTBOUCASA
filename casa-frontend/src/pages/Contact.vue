@@ -4,12 +4,9 @@
   </template>
   
   <script>
-  export default {
-    // your script content here
-    mounted() {
-      console.log('Contact component mounted!');
-    }
-  }
+    export default {
+  name: 'Contact'
+}
   </script>
   
   <style>

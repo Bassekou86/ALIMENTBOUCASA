@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * casa-blog router
+ * casaproduit router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::casa-blog.casa-blog');
+module.exports = createCoreRouter('api::casaproduit.casaproduit');

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * casa-blog service
+ * casaproduit service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::casa-blog.casa-blog');
+module.exports = createCoreService('api::casaproduit.casaproduit');
