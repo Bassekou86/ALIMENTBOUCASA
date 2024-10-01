@@ -43,7 +43,7 @@ export default {
     justify-items: center;
     padding: 0;
     margin: 0;
-    background-color: #205af92b;
+    background-color: #ffe4c4;
 }
 
 /* casaNavbar :active="active" */
@@ -73,7 +73,7 @@ header {
     background-color: white;
     border: solid 1px #205af92b;
     position: relative;
-    border: 0 solid #205af992;
+    border: 0 solid #ffe4c4;
     border-width: 0 1px 0 1px;
     z-index: 1;
     /* box-shadow: 4px 0 4px -2px #205af992, -4px 0 4px -2px #205af992; */

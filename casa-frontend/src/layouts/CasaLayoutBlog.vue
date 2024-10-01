@@ -45,8 +45,8 @@ const truncatedDescription = computed(() => truncate(props.article.attributes.De
           <div class="dateCreation">
             {{ new Date(article.attributes.Date).toLocaleDateString('fr-FR') }}
           </div> 
-          <RouterLink :to="'/blog/' + article.id">
-            <button><slot name="Blog"/></button>
+          <RouterLink :to="'/produit/' + article.id">
+            <button><slot name="Produit"/></button>
           </RouterLink>
           
     </div>

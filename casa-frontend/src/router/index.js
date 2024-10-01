@@ -33,6 +33,14 @@ const routes = [
         layout: 'CasaLayoutBlog'
       },
   },
+  {
+    path: '/produit/:id',
+    name: 'Produit',
+    component: () => import(/* webpackChunkName "Blog" */ '@/pages/Produit.vue'),
+    meta: {
+      layout: 'MulotLayoutProduit'
+    }
+  },
   ]
   
   const router = createRouter({
